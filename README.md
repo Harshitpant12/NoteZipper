@@ -48,13 +48,13 @@ _(Note: The backend is hosted on a free tier, so the initial request may take 30
 
 ## 📸 Screenshots
 
-|                Login Page                 |                       Register                        |
-| :---------------------------------------: | :---------------------------------------------------: |
-|   ![Login UI](./assets/login_note.png)    |      ![Dashboard UI](./assets/register_note.png)      |
-|                Home Screen                |                       Dashboard                       |
-| ![Login UI](./assets/homescreen_note.png) | ![Dashboard UI](./assets/homescreen_without_note.png) |
-|                Create Note                |                      Update Note                      |
-|   ![Login UI](./assets/create_note.png)   |       ![Dashboard UI](./assets/update_note.png)       |
+|                Login Page                             |                       Register                        |
+| :---------------------------------------------------: | :---------------------------------------------------: |
+|   ![Login UI](./assets/login_note.png)                |      ![Dashboard UI](./assets/register_note.png)      |
+|                Home Screen                            |                       Dashboard                       |
+| ![Login UI](./assets/homescreen_note.png)             | ![Dashboard UI](./assets/homescreen_without_note.png) |
+|                Create Note                            |                      Update Note                      |
+|   ![Login UI](./assets/create_note.png)               |       ![Dashboard UI](./assets/update_note.png)       |
 
 ---
 
@@ -93,7 +93,7 @@ Follow these steps to run the project locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Harshitpant12/NoteZipper.git](https://github.com/Harshitpant12/NoteZipper.git)
+git clone https://github.com/Harshitpant12/NoteZipper.git
 cd NoteZipper
 ```
 
@@ -121,7 +121,7 @@ npm run dev
 ### 3. Frontend Setup
 Open a new terminal window, navigate to the frontend folder, and install dependencies:
 ```bash
-cd ../frontend
+cd frontend
 npm install
 ```
 
