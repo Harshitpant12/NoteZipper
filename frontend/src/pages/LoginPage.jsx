@@ -1,10 +1,11 @@
-import React, { useState, useContext } from 'react';
-import { Link, useNavigate } from 'react-router';
-import AuthContext from '../context/AuthContext';
+import React, { useState, useContext } from "react";
+import { Link, useNavigate } from "react-router";
+import AuthContext from "../context/AuthContext";
+import NavBar from "../components/NavBar";
 
 const LoginPage = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
   const { login } = useContext(AuthContext);
@@ -15,62 +16,66 @@ const LoginPage = () => {
     setLoading(true);
     try {
       await login(email, password);
-      navigate('/');
+      navigate("/");
     } catch (error) {
-      alert('Login Failed');
+      alert("Login Failed");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-[#090909] flex items-center justify-center px-4">
-      <div className="card bg-base-200 w-full max-w-md">
-        <div className="card-body">
-          <h2 className="card-title text-2xl mb-4">Login</h2>
+    <div className="min-h-screen bg-[#090909]">
+      <NavBar />
 
-          <form onSubmit={handleSubmit}>
-            <div className="form-control mb-4">
-              <label className="label">
-                <span className="label-text">Email</span>
-              </label>
-              <input
-                type="email"
-                className="input input-bordered"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
+      <div className="flex items-center justify-center px-4 py-12">
+        <div className="card bg-base-200 w-full max-w-md">
+          <div className="card-body">
+            <h2 className="card-title text-2xl mb-4">Login</h2>
 
-            <div className="form-control mb-6">
-              <label className="label">
-                <span className="label-text">Password</span>
-              </label>
-              <input
-                type="password"
-                className="input input-bordered"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
+            <form onSubmit={handleSubmit}>
+              <div className="form-control mb-4">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="email"
+                  className="input input-bordered"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
 
-            <button
-              type="submit"
-              className="btn w-full text-[#ef9f33] bg-base-300"
-              disabled={loading}
-            >
-              {loading ? 'Logging in...' : 'Login'}
-            </button>
-          </form>
+              <div className="form-control mb-6">
+                <label className="label">
+                  <span className="label-text">Password</span>
+                </label>
+                <input
+                  type="password"
+                  className="input input-bordered"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </div>
 
-          <p className="text-sm mt-4 text-center">
-            Don’t have an account?{' '}
-            <Link to="/register" className="text-[#ef9f33]">
-              Register
-            </Link>
-          </p>
+              <button
+                type="submit"
+                className="btn w-full text-[#ef9f33] bg-base-300"
+                disabled={loading}
+              >
+                {loading ? "Logging in..." : "Login"}
+              </button>
+            </form>
+
+            <p className="text-sm mt-4 text-center">
+              Don’t have an account?{" "}
+              <Link to="/register" className="text-[#ef9f33]">
+                Register
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>
