@@ -146,20 +146,6 @@ npm run dev
 
 ---
 
-## Scalability & Production Readiness
-
-This application is designed with a monolithic architecture for simplicity but is structured to scale into a microservices ecosystem as traffic grows.
-
-1.  **Horizontal Scaling**: The stateless nature of JWT authentication allows us to deploy multiple instances of the backend behind a Load Balancer (e.g., Nginx) without session affinity issues.
-2.  **Database Optimization**: Mongoose schemas are indexed on `user` and `createdAt` fields to ensure O(log n) query performance even with millions of records.
-3.  **Security Hardening**:
-    * **Rate Limiting**: Implemented to prevent brute-force attacks on API endpoints.
-    * **Input Validation**: `express-validator` sanitizes all incoming data to prevent NoSQL injection.
-    * **Environment Isolation**: Strict separation of Development and Production environments via `.env`.
-4.  **CI/CD Pipeline**: The project is deployed via Render with auto-deploy hooks, ensuring that the production branch is always up-to-date with the latest stable code.
-
----
-
 ## Contributing
 
 Contributions are welcome!
