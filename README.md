@@ -1,4 +1,4 @@
-# 📝 NoteZipper
+# NoteZipper
 
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)](https://github.com/Harshitpant12/NoteZipper)
 [![MERN Stack](https://img.shields.io/badge/Stack-MERN-blue)](https://mongodb.com)
@@ -8,25 +8,25 @@
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 [**View Live Application**](https://notezipper-g8e3.onrender.com)  
 _(Note: The backend is hosted on a free tier, so the initial request may take 30-60 seconds to spin up.)_
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **🔐 Secure Authentication**: Full JWT-based auth system with HTTP-only cookie support (ready) and local storage failover.
-- **🛡️ Protected Routes**: Custom middleware ensures user data privacy—users can only access their own notes.
-- **⚡ Real-time Interface**: Instant feedback on CRUD operations using Optimistic UI principles.
-- **🔍 Search & Filter**: Real-time filtering of notes by title and content.
-- **🎨 Responsive Design**: Fully responsive UI built with **Tailwind CSS**.
-- **📂 Clean Architecture**: Separation of concerns (Controllers, Routes, Models, Services) for maintainability.
+- **Secure Authentication**: Full JWT-based auth system with HTTP-only cookie support (ready) and local storage failover.
+- **Protected Routes**: Custom middleware ensures user data privacy—users can only access their own notes.
+- **Real-time Interface**: Instant feedback on CRUD operations using Optimistic UI principles.
+- **Search & Filter**: Real-time filtering of notes by title and content.
+- **Responsive Design**: Fully responsive UI built with **Tailwind CSS**.
+- **Clean Architecture**: Separation of concerns (Controllers, Routes, Models, Services) for maintainability.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### **Frontend**
 
@@ -46,7 +46,7 @@ _(Note: The backend is hosted on a free tier, so the initial request may take 30
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 |                Login Page                             |                       Register                        |
 | :---------------------------------------------------: | :---------------------------------------------------: |
@@ -58,7 +58,7 @@ _(Note: The backend is hosted on a free tier, so the initial request may take 30
 
 ---
 
-## 🏗️ Architecture & Project Structure
+## Architecture & Project Structure
 
 The project follows a **MVC (Model-View-Controller)** pattern adapted for modern full-stack development.
 
@@ -82,7 +82,7 @@ NoteZipper/
 ```
 
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 Follow these steps to run the project locally.
 
@@ -133,7 +133,7 @@ npm run dev
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 | Method | Endpoint | Description | Protected? |
 | :--- | :--- | :--- | :---: |
@@ -146,7 +146,7 @@ npm run dev
 
 ---
 
-## 📈 Scalability & Production Readiness
+## Scalability & Production Readiness
 
 This application is designed with a monolithic architecture for simplicity but is structured to scale into a microservices ecosystem as traffic grows.
 
@@ -160,7 +160,7 @@ This application is designed with a monolithic architecture for simplicity but i
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -172,6 +172,6 @@ Contributions are welcome!
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
